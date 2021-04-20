@@ -4,23 +4,35 @@
   margin: 0;
   text-decoration: none;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 
 body {
-  background-color: #e59393;
-  font-family: 'Lato', sans-serif;
-  font-size: 16px;
+  background-color: #170a61;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  color: white;
 }
 
 .menu {
   display: flex;
   list-style: none;
 }
+.menu li a {
+  color: rgb(255, 255, 255);
+}
 
-#menu {
+header {
   display: flex;
   justify-content: space-between;
   padding: 22px 100px;
   align-items: center;
+  position: sticky;
+  z-index: 9999;
+  top: 0;
+  background:#170a61;
 }
 .menu li {
   padding: 4px 24px;
@@ -30,79 +42,346 @@ body {
   padding-right: 0;
 }
 
+.d-none {
+  display: none;
+}
+
 .logo {
   width: 36px;
   height: 36px;
 }
 
-.titulo{
-    padding: 120px 200px 5px;
-
+.titulo {
+  padding: 120px 200px 5px;
 }
 
-.titulo h1{
-    font-size: 30px;
+.titulo h1 {
+  font-size: 30px;
 }
 
-.titulo p{
-    max-width: 628px;
-    margin-bottom: 56px;
+.titulo p {
+  max-width: 628px;
+  margin-bottom: 56px;
 }
 
-.titulo a{
-background-color: aquamarine;
-width: 226px;
-display: flex;
-height: 56px;
-align-items: center;
-justify-content: center;
+.titulo a {
+  background-color: aquamarine;
+  width: 226px;
+  display: flex;
+  height: 56px;
+  align-items: center;
+  justify-content: center;
 }
 
-.contenido{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.contenido {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.destacado{
-    padding: 100px;
-    clip-path: polygon(0% 20%, 100% 0%, 100% 80%, 0% 100%);
-    background-color: rgb(32, 31, 27);
+.destacado {
+  padding: 100px;
+  clip-path: polygon(0% 16%, 100% 0%, 100% 80%, 0% 100%);
+  background-color: rgb(27, 27, 167);
 }
 
-.musica{
-    margin-bottom: 72px;
-    width: 45%;
+.musica {
+  margin-bottom: 72px;
+  width: 45%;
 }
-.destacado h2{
-    margin-left: 100px;
-    margin-bottom: 26px;
+.destacado h2 {
+  margin-left: 100px;
+  margin-bottom: 26px;
 }
 
-.musica iframe{
+.musica iframe {
+  width: 100%;
+}
+
+.celular img {
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+  top: -125px;
+  left: 25%;
+}
+
+.celular {
+  padding: 0 200px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 245px;
+}
+
+.left-celular {
+  position: relative;
+  width: 50%;
+}
+
+.texto {
+  width: 50%;
+}
+
+.galeria {
+  margin-bottom: 64px;
+}
+.galeria h2 {
+  padding-left: 200px;
+  margin-bottom: 36px;
+  font-size: 30px;
+}
+.imagenes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.imagen {
+  width: 33.33%;
+  filter: grayscale(100%);
+}
+
+.temas {
+  padding: 0 200px;
+}
+
+.temas h2 {
+  font-size: 30px;
+  margin-bottom: 56px;
+}
+
+.tema {
+  display: flex;
+}
+.imgtemas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+}
+
+.textemas {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0 20px;
+  height: 64px;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.visita {
+  background-color: rgb(27, 27, 167);
+  padding: 213px 374px 151px;
+  clip-path: polygon(0% 30%, 100% 0%, 100% 100%, 0% 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.visita h2 {
+  justify-content: center;
+  display: flex;
+  color: white;
+  font-size: 48px;
+}
+
+.visita a {
+  margin-top: 36px;
+  background-color: aquamarine;
+  width: 300px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 100px;
+}
+
+.redes i {
+  padding: 0 15px;
+}
+.redes i:last-child {
+  padding-right: 0;
+}
+
+/* responsive 
+
+small: 480,
+  medium: 768,
+  large: 1024,
+  mLarge: 1280,
+  xLarge: 1920,
+*/
+@media (max-width: 1200px) {
+  body {
+    font-size: 16px;
+  }
+  .visita {
+    padding: 213px 200px 151px;
+  }
+  .visita h2 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .visita {
+    padding: 133px 50px 101px;
+  }
+  .visita h2 {
+    font-size: 25px;
+  }
+  .titulo {
+    padding: 60px 50px 5px;
+  }
+  .celular img {
+    width: 180px;
+    top: -90px;
+  }
+  .imagen {
+    width: 50%;
+  }
+  .temas {
+    padding: 50px;
+  }
+  .visitas {
+    padding: 133px 50px 101px;
+  }
+  footer {
+    padding: 22px 50px;
+  }
+  .redes i {
+    padding: 0 10px;
+  }
+  .celular {
+    padding: 0 50px;
+  }
+  .galeria h2{
+    font-size: 24px;
+    padding-left: 50px;
+  }
+  .destacado{
+    padding: 100px 50px 50px;
+  }
+}
+
+@media (max-width: 768px){
+  .lados {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .w-100 {
     width: 100%;
+  }
+  .flex-column {
+    flex-direction: column;
+  }
+  .fuente-movil {
+    font-size: 28px;
+  }
+  .galeria h2 {
+    padding-left: 16px;
+  }
+  .destacado h2 {
+    margin-left: 0;
+  }
 }
 
-.celular img{
-    max-width: 100%;
-    height: auto;
+@media (max-width: 480px){
+  .w-sm-100 {
+    width: 100% !important;
+  }
+  .left-celular {
+    height: 300px;
+  }
+  .flex-sm-column {
+    flex-direction: column;
+  }
+  .musica{
+    margin-bottom: 11px;
+  }
+  .destacado{
+    padding-bottom: 140px;
+    clip-path: polygon(0% 8%, 100% 0%, 100% 90%, 0% 100%);
+  }
+  .celular{
+    margin-bottom: 54px;
+  }
+  .visita{
+    clip-path: polygon(0% 15%, 100% 0%, 100% 100%, 0% 100%);
+  }
+
+  /* menu */
+  .respmenu input[type="checkbox"], .respmenu .fa-bars, .respmenu .fa-times {
+    position: absolute;  
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    right: 0;
+    top: 0;
+    width: 36px;
+    height: 36px;  
+  }
+   
+  .respmenu .fa-bars, .respmenu .fa-times {
+    font-size: 36px;
+    pointer-events: none;
+  }
+   
+  .respmenu input[type="checkbox"] {
+    opacity: 0; 
+  }
+   
+  .respmenu {
+    color: white;
+    position: relative;
+    min-height: 36px;
+  }
+   
+  .respmenu nav {
+    display: none;
+  }
+   
+  .respmenu input:checked ~ nav {
+    display: block;
+  }
+   
+  .respmenu input:checked ~ .fa-bars {
+    display: none;
+  }
+   
+  .respmenu input:not(:checked) ~ .fa-times {
+    display: none;
+  }
+
+  .hambur{
     position: absolute;
-    top: -120px;
-    left: 0;
-}
-
-.celular{
-    padding: 0 200px;
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-}
-
-.left-celular{
-    position: relative;
-    width: 50%;
-}
-
-.texto{
-    width: 50%;
+    left: 16px;
+    top: 22px;
+    z-index: 999;
+  }
+    
+  .menu{
+    padding-top: 42px;
+  }
+  .fas {
+    display: inherit;
+  }
+  .menu li {
+    padding-left: 0;
+  }
+  .d-none {
+    display: inherit;
+  }
 }

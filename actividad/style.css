@@ -1,0 +1,9 @@
+.boton:hover{
+background-color: cadetblue;
+transition: 1s backgroud-color ease;
+}
+
+.titulo:hover{
+    color: rgb(79, 24, 131);
+    transition: 1s backgroud-color ease;
+    }

@@ -4,94 +4,174 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css" />
+    <title>podcast</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
   </head>
 
   <body>
-    <header id="menu">
-      <img class="logo" src="./imagenes/logo.png" alt="logo barcelona" />
-      <ul class="menu">
-        <li>nombre1</li>
-        <li>nombre2</li>
-        <li>nombre3</li>
-        <li>nombre4</li>
-      </ul>
+    <header class="lados" id="menu">
+      <a class="hambur" href="#main"><img class="logo" src="./imagenes/logo.png" alt="logo barcelona" /></a>
+      <div class="respmenu w-sm-100">
+      <input class="d-none" type="checkbox">
+      <i class="fas fa-bars d-none"></i>
+      <i class="fas fa-times d-none"></i>
+      <nav>
+          <ul class="menu flex-sm-column">
+          <li><a href="#destacado">Destacados</a></li>
+          <li><a href="#invitados">Invitados</a></li>
+          <li><a href="#temas">Temas</a></li>
+          <li><a href="#visitas">Novedades</a></li>
+        </ul>
+      </nav>
+      </div>
     </header>
-    <div class="titulo">
-      <h1>Barcelona mes que un club</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo excepturi
-        dicta sapiente consequatur eligendi, illum, et aliquam, recusandae
-        maxime nemo sunt perspiciatis exercitationem cumque inventore facilis
-        quia praesentium architecto? Dicta.
-      </p>
-      <a href="#">CONOCE MAS</a>
-    </div>
-    <div class="destacado">
-      <h2>Destacados</h2>
-      <div class="contenido">
-        <div class="musica">
-          <iframe
-            src="https://open.spotify.com/embed/track/6BHHQJCjGtAxl9eZVTo20K"
-            width="300"
-            height="80"
-            frameborder="0"
-            allowtransparency="true"
-            allow="encrypted-media"
-          ></iframe>
-        </div>
-        <div class="musica">
-          <iframe
-            src="https://open.spotify.com/embed/track/5XKo1RnDPMY1BLIX9RbXPv"
-            width="300"
-            height="80"
-            frameborder="0"
-            allowtransparency="true"
-            allow="encrypted-media"
-          ></iframe>
-        </div>
-        <div class="musica">
-          <iframe
-            src="https://open.spotify.com/embed/track/1pngWD2dRNeHBmbKetSrar"
-            width="300"
-            height="80"
-            frameborder="0"
-            allowtransparency="true"
-            allow="encrypted-media"
-          ></iframe>
-        </div>
-        <div class="musica">
-          <iframe
-            src="https://open.spotify.com/embed/track/7neWdvtY8xzpgVxRgW7G64"
-            width="300"
-            height="80"
-            frameborder="0"
-            allowtransparency="true"
-            allow="encrypted-media"
-          ></iframe>
-        </div>
-      </div>
-    </div>
-    <div class="celular">
-      <div class="left-celular">
-        <img src="./imagenes/celular.png" width="180" alt="cel" />
-      </div>
-      <div class="texto">
-        <h2>Dedonde venimos</h2>
+    <main id="main">
+      <div class="titulo lados">
+        <h1>Barcelona mes que un club</h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt
-          illum obcaecati dignissimos voluptate ducimus distinctio, perferendis
-          aliquid voluptates officiis quibusdam voluptatibus nobis totam omnis
-          aliquam quas inventore dolores ad laborum?
+          Somos una entidad polideportiva con sede en Barcelona, España. Fue fundado
+          como club de fútbol el 29 de noviembre de 1899 y registrado
+          oficialmente el 5 de enero de 1903. 
         </p>
+        <a class="w-sm-100" href="https://es.wikipedia.org/wiki/F%C3%BAtbol_Club_Barcelona">CONOCE MAS</a>
       </div>
-    </div>
+
+      <div class="destacado lados" id="destacado">
+        <h2>Destacados</h2>
+        <div class="contenido flex-sm-column w-100">
+          <div class="musica w-sm-100">
+            <iframe
+              src="https://open.spotify.com/embed/track/6BHHQJCjGtAxl9eZVTo20K"
+              width="150"
+              height="120"
+              frameborder="0"
+              allowtransparency="true"
+              allow="encrypted-media"
+            ></iframe>
+          </div>
+          <div class="musica w-sm-100">
+            <iframe
+              src="https://open.spotify.com/embed/track/5XKo1RnDPMY1BLIX9RbXPv"
+              width="150"
+              height="120"
+              frameborder="0"
+              allowtransparency="true"
+              allow="encrypted-media"
+            ></iframe>
+          </div>
+          <div class="musica w-sm-100">
+            <iframe
+              src="https://open.spotify.com/embed/track/1pngWD2dRNeHBmbKetSrar"
+              width="150"
+              height="120"
+              frameborder="0"
+              allowtransparency="true"
+              allow="encrypted-media"
+            ></iframe>
+          </div>
+          <div class="musica w-sm-100">
+            <iframe
+              src="https://open.spotify.com/embed/track/7neWdvtY8xzpgVxRgW7G64"
+              width="150"
+              height="120"
+              frameborder="0"
+              allowtransparency="true"
+              allow="encrypted-media"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+
+      <div class="celular lados flex-sm-column">
+        <div class="left-celular w-sm-100">
+          <img src="./imagenes/celular.png" width="220" alt="cel" />
+        </div>
+        <section class="texto w-sm-100">
+          <h2>De donde venimos</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt
+            illum obcaecati dignissimos voluptate ducimus distinctio,
+            perferendis aliquid voluptates officiis quibusdam voluptatibus nobis
+            totam omnis aliquam quas inventore dolores ad laborum?
+          </p>
+        </section>
+      </div>
+      <div class="galeria" id="invitados">
+        <h2>Invitados estelares</h2>
+        <div class="imagenes">
+          <img class="imagen w-sm-100" src="./imagenes/messi.jpg" alt="messi" />
+          <img class="imagen w-sm-100" src="./imagenes/laporta.jpg" alt="lapota" />
+          <img class="imagen w-sm-100" src="./imagenes/henry.jpg" alt="henry" />
+          <img class="imagen w-sm-100" src="./imagenes/pep.jpg" alt="pep" />
+          <img class="imagen w-sm-100" src="./imagenes/pique.jpg" alt="pique" />
+          <img class="imagen w-sm-100" src="./imagenes/ronaldo.jpg" alt="ronal" />
+        </div>
+      </div>
+      <div class="temas lados" id="temas">
+        <h2>Algunos de nuestros temas</h2>
+        <div class="tema flex-column">
+          <div class="imgtemas w-100">
+            <img
+              width="104"
+              height="104"
+              src="./imagenes/tema1.svg"
+              alt=""
+            /><span class="textemas">Trabajo remoto</span>
+          </div>
+          <div class="imgtemas w-100">
+            <img
+              width="104"
+              height="104"
+              src="./imagenes/tema2.svg"
+              alt=""
+            /><span class="textemas">Repensando en el deporte</span>
+          </div>
+          <div class="imgtemas w-100">
+            <img
+              width="104"
+              height="104"
+              src="./imagenes/tema3.svg"
+              alt=""
+            /><span class="textemas">Estamos en cualquier plataforma</span>
+          </div>
+          <div class="imgtemas w-100">
+            <img
+              width="104"
+              height="104"
+              src="./imagenes/tema4.svg"
+              alt=""
+            /><span class="textemas">cuidamos tu informacion</span>
+          </div>
+        </div>
+      </div>
+      <div class="visita lados" id="visitas">
+        <h2>Quieres las ultimas novedades</h2>
+        <a class="w-sm-100" href="https://www.fcbarcelona.es/es/">VISITANOS</a>
+      </div>
+    </main>
+    <footer class="flex-sm-column lados">
+      <div class="copy">
+        <h3>© 2019— Hello blue pale dot</h3>
+      </div>
+      <div class="redes">
+        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-spotify"></i>
+        <i class="fab fa-telegram-plane"></i>
+      </div>
+    </footer>
   </body>
 </html>
