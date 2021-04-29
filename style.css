@@ -73,6 +73,11 @@ header {
   justify-content: center;
 }
 
+.button-hover:hover {
+  background-color: #d6e4df;
+  transition: all .2s linear;
+}
+
 .contenido {
   display: flex;
   flex-wrap: wrap;
