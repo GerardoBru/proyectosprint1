@@ -211,18 +211,15 @@ footer {
 .redes i {
   padding: 0 15px;
 }
-.redes i:last-child {
+.redes a {
+  color: #fff;
+  text-decoration: none;
+}
+.redes a:last-child i {
   padding-right: 0;
 }
 
-/* responsive 
-
-small: 480,
-  medium: 768,
-  large: 1024,
-  mLarge: 1280,
-  xLarge: 1920,
-*/
+/* responsive */
 @media (max-width: 1200px) {
   body {
     font-size: 16px;
